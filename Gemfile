@@ -5,12 +5,22 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.5'
 # Use Mysql
 gem 'mysql2', '0.4.2'
+
+# Use Bootstrap for stylesheets
+gem 'sprockets-rails', '~> 3.0'
+gem 'bootstrap-sass', '~> 3.3.6'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+#gem 'compass-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
+
+gem 'simple_form'
+gem 'font-awesome-rails', '~> 4.3.0.0'
+
+gem 'capistrano', '~> 3.4'
 
 # Slugify url
 gem 'friendly_id', '~> 5.1'
