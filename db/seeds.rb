@@ -5,3 +5,17 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+sample_entries = [
+  [ "hello world", "aabbccddeeddffddgege"],
+  [ "hello world", "aabbccddeeddffddgege"],
+  [ "hello world", "aabbccddeeddffddgege"],
+  [ "hello world", "aabbccddeeddffddgege"],
+  [ "hello world", "aabbccddeeddffddgege"],
+  [ "hello world", "aabbccddeeddffddgege"],
+  [ "hello world", "aabbccddeeddffddgege"],
+  [ "hello world", "aabbccddeeddffddgege"],
+]
+
+sample_entries.each do |name, content|
+  Entry.create(name: name, content: content)
+end
