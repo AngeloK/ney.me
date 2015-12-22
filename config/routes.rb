@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  comfy_route :cms_admin, :path => '/admin'
-
   # Make sure this routeset is defined last
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -58,5 +56,4 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  comfy_route :cms, :path => '/', :sitemap => false
 end
