@@ -1,10 +1,10 @@
 class EntriesController < ApplicationController
   def index
-    @entries = Entry.all
+    @entries = Entry.all.limit(5)
   end
 
   def show
-    @entry = Entry.find(params[:slug])
+    @entry = Entry.friendly.find(params[:id])
   end
 
   def new
