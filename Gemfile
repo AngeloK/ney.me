@@ -27,6 +27,7 @@ gem 'friendly_id', '~> 5.1'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+gem "aws-sdk"
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -56,5 +57,13 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+end
+
+group :development do
+  gem 'unicorn', '~> 4.9.0'
+  gem 'capistrano-rails', '~> 1.1.3'
+  gem 'capistrano-rvm', '~> 0.1.2'
+  gem 'capistrano-unicorn-nginx', '~> 3.3.3'
+  gem 'capistrano-safe-deploy-to', '~> 1.1.1'
 end
 
