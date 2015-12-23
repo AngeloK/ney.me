@@ -28,7 +28,6 @@ gem 'friendly_id', '~> 5.1'
 # gem 'therubyracer', platforms: :ruby
 
 # CMS
-gem 'comfortable_mexican_sofa', '~> 1.12.0'
 gem "aws-sdk"
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

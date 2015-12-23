@@ -4,7 +4,7 @@ class EntriesController < ApplicationController
   end
 
   def show
-    @entry = Entry.find(params[:slug])
+    @entry = Entry.friendly.find(params[:id])
   end
 
   def new
