@@ -27,7 +27,9 @@ gem 'friendly_id', '~> 5.1'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-# CMS
+gem 'devise'
+gem 'rails_admin', '~> 0.8.1'
+
 gem "aws-sdk"
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
