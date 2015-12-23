@@ -30,6 +30,14 @@
 									<li>
 											<a href="#">About Me</a>
 									</li>
+									<% if current_user %>
+										<li>
+											<%= link_to "Admin", rails_admin_path %>
+										</li>
+										<li>
+											<%= link_to "Log out", destroy_user_session_path, :method => 'delete' %>
+										</li>
+									<% end %>
 							</ul>
 					</div>
 					<!-- /.navbar-collapse -->
