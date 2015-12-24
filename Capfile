@@ -25,7 +25,7 @@ require 'capistrano/passenger'
 # require 'capistrano/rails/migrations'
 #
 set :rvm_type, :user
-set :rvm_ruby_version, '2.2.2p95'
+set :rvm_ruby_version, '2.2.2'
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
 Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }
