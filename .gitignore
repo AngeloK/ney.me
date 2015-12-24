@@ -132,4 +132,3 @@ pickle-email-*.html
 # vim temp files
 *.swp
 .DS_Store
-db/migrate/
