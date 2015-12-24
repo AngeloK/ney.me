@@ -66,6 +66,7 @@ group :development do
   gem 'unicorn', '~> 4.9.0'
   gem 'capistrano-rails', '~> 1.1.3'
   gem 'capistrano-rvm', '~> 0.1.2'
+  gem 'capistrano-bundler', '~> 1.1.2'
   gem 'capistrano-unicorn-nginx', '~> 3.3.3'
   gem 'capistrano-safe-deploy-to', '~> 1.1.1'
 end
