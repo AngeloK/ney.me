@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, controllers: { registrations: "users/registrations" }
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   # Make sure this routeset is defined last
 
@@ -17,7 +17,9 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-  resources :entries
+  scope modules: 'entry' do
+    resources :entries
+  end
 
   # Example resource route with options:
   #   resources :products do
