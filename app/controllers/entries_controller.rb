@@ -1,6 +1,7 @@
 class EntriesController < ApplicationController
   def index
-    @entries = Entry.all.limit(5)
+    @entries = Entry.all
+    p current_user
   end
 
   def show
@@ -35,4 +36,3 @@ private
 
 
 end
-
