@@ -7,7 +7,7 @@
 								<div class="post-heading">
 										<% if @entry %>
 											<h1 class="blog-title"> <%= @entry.name %> </h1>
-											<span class="meta">Posted by <a href="#">Neyanbhbin</a> on <%= @entry.created_at.strftime('%F %T') %></span>
+											<span class="meta">Updated by <a href="#">Neyanbhbin</a> on <%= @entry.updated.strftime('%F %T') %></span>
 										<% else %>
 											<h1 class="blog-title"> <%= link_to "Neyanbhbin", root_path %> </h1>
 											<span class="meta">I Know Nothing</span>
